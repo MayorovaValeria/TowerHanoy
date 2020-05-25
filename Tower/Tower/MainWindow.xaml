@@ -1,0 +1,43 @@
+﻿<Window x:Class="Tower.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tower"
+        mc:Ignorable="d"
+
+        Title="Ханойская башня" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Rectangle Grid.Column="0" Stroke="Black" Width="15" Height="220" Fill="Black" VerticalAlignment="Bottom"/>
+        <Rectangle Grid.Column="1" Stroke="Black" Width="15" Height="220" Fill="Black" VerticalAlignment="Bottom"/>
+        <Rectangle Grid.Column="2" Stroke="Black" Width="15" Height="220" Fill="Black" VerticalAlignment="Bottom"/>
+
+        <DockPanel Grid.Column="0" LastChildFill="False" Background="#00B4ACAC" MouseUp="tossdisk_GotFocus">
+
+            <Rectangle Stroke="Black" Width="220" Height="25" Fill="Purple" DockPanel.Dock="Bottom"/>
+            <Rectangle Stroke="Black" Width="190" Height="25" Fill="Blue" DockPanel.Dock="Bottom"/>
+            <Rectangle Stroke="Black" Width="160" Height="25" Fill="Aqua" DockPanel.Dock="Bottom"/>
+            <Rectangle Stroke="Black" Width="130" Height="25" Fill="Green" DockPanel.Dock="Bottom"/>
+            <Rectangle Stroke="Black" Width="100" Height="25" Fill="Yellow" DockPanel.Dock="Bottom"/>
+            <Rectangle Stroke="Black" Width="70" Height="25" Fill="Orange" DockPanel.Dock="Bottom"/>
+            <Rectangle Stroke="Black" Width="40" Height="25" Fill="Red" DockPanel.Dock="Bottom"/>
+        </DockPanel>
+
+
+        <DockPanel Grid.Column="1" LastChildFill="False" Background="#00B4ACAC" MouseUp="tossdisk_GotFocus">
+        </DockPanel>
+
+        <DockPanel Grid.Column="2" LastChildFill="False" Background="#00B4ACAC" MouseUp="tossdisk_GotFocus">
+        </DockPanel>
+        
+
+        
+
+    </Grid>
+</Window>
